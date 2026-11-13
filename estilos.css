@@ -955,6 +955,10 @@ body {
   color: var(--text-muted);
 }
 
+.form-privacidad {
+  margin-top: 6px;
+}
+
 /* Confirmación después de enviar */
 .form-exito {
   text-align: center;
