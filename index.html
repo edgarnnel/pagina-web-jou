@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jou Flores | Makeup Studio & Professional Beauty</title>
+  <meta name="description" content="Estudio de Maquillaje Profesional en San Pedro Sula y El Progreso, Yoro. Maquillaje social, novias, clases de automaquillaje y producciones artísticas por Jou Flores.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Vista previa al compartir (WhatsApp, Facebook, etc.) -->
+  <!-- IMPORTANTE: al publicar el sitio, cambia og:image a la URL completa, ej. https://tudominio.com/images/makeup_hero_elegant.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_HN">
+  <meta property="og:title" content="Jou Flores | Makeup Studio">
+  <meta property="og:description" content="Maquillaje social, novias, clases de automaquillaje y maquillaje artístico en San Pedro Sula y El Progreso, Yoro. Reserva por WhatsApp.">
+  <meta property="og:image" content="images/makeup_hero_elegant.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts (Cinzel: letras del logo) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css?v=8">
+</head>
+<body>
+
+  <!-- Navegación Fija Glassmorphism -->
+  <header id="header-principal">
+    <nav id="menu-principal">
+      <a href="#inicio" class="logo" aria-label="Jou Flores Makeup Studio, ir al inicio">
+        <!-- Monograma JF (mismo dibujo que images/favicon.svg) -->
+        <svg class="logo-monograma" viewBox="5 4 97 114" aria-hidden="true">
+          <path d="M32,5 H62 L61,8 Q56,8.5 54.5,10.5 H42 Q40.5,8.5 34,8 Z"/>
+          <path d="M42,9 H54.5 V78 Q53,85 48.5,91 Q44,86 42,80 Z"/>
+          <path d="M56,26 H100 L101,41 Q98,32 90,30 H67 V100 Q66,110 49,117 Q56,108 56,100 Z"/>
+          <path d="M67,57 Q78,55.5 88,53 L91,52 V72 Q89.5,63 85,59 Q76,60 67,62 Z"/>
+          <path d="M21,80 C12,84 6,92 8,100 C10,108 18,112 26,110 C38,107 48,94 55,82 C63,68 74,59 90,54 C76,60.5 66,70 58.5,84 C50.5,98 40,106 28,106 C20,106 13.5,102 12.5,96 C11.5,90 14,84 21,80 Z"/>
+        </svg>
+        <span class="logo-texto" aria-hidden="true">
+          <span class="logo-nombre">Jou Flores</span>
+          <span class="logo-sub">Makeup Studio</span>
+        </span>
+      </a>
+      
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir Menú" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#inicio" class="active">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#reservaciones">Reservaciones</a>
+        <a href="#contacto" class="btn-nav">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section con fondo y gradiente elegante -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Realza tu belleza <em>única</em> con un toque profesional</h1>
+      <p>Especialista en Maquillaje Social, Novias y Maquillaje Artístico. Diseñamos el look perfecto para que brilles en tus momentos más especiales.</p>
+      
+      <div class="hero-buttons">
+        <a href="#reservaciones" class="btn-primary">Haz tu Reservación <span class="btn-flecha" aria-hidden="true">→</span></a>
+        <a href="#servicios" class="btn-secondary">Explorar Servicios <span class="btn-flecha" aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">500+</span>
+          <span class="stat-desc">Clientes Felices</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">100%</span>
+          <span class="stat-desc">Duración Impecable</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">VIP</span>
+          <span class="stat-desc">Atención Exclusiva</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios Section con Tarjetas Interactivas -->
+  <section id="servicios">
+    <div class="section-header">
+      <span class="sub-title">Nuestros Servicios</span>
+      <h2>Experiencias de Maquillaje de Lujo</h2>
+      <p>Cada servicio incluye preparación de piel personalizada y productos de alta gama.</p>
+    </div>
+
+    <div class="servicios-grid">
+      <div class="servicio-card" data-servicio="Maquillaje Social" data-trabajos="social">
+        <div class="card-img">
+          <img src="images/makeup_social_1790376866896.jpg" alt="Maquillaje Social">
+          <span class="card-tag">Popular</span>
+        </div>
+        <div class="card-body">
+          <h3>Maquillaje Social</h3>
+          <p>Ideal para fiestas, galas, graduaciones y sesiones de fotos especiales.</p>
+          <div class="card-footer">
+            <span class="duracion">⏱️ 60 min</span>
+            <button class="btn-reservar-servicio" data-servicio-name="Maquillaje Social">Reservar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="servicio-card" data-servicio="Maquillaje de Novia" data-trabajos="novia">
+        <div class="card-img">
+          <img src="images/makeup_bridal_1790376876556.jpg" alt="Maquillaje de Novia">
+          <span class="card-tag gold">Exclusivo</span>
+        </div>
+        <div class="card-body">
+          <h3>Maquillaje de Novia</h3>
+          <p>Un look radiante, a prueba de agua y diseñado para durar todo tu día soñado.</p>
+          <div class="card-footer">
+            <span class="duracion">⏱️ 90 min</span>
+            <button class="btn-reservar-servicio" data-servicio-name="Maquillaje de Novia">Reservar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="servicio-card" data-servicio="Clases de Automaquillaje" data-trabajos="masterclass">
+        <div class="card-img">
+          <img src="images/makeup_hero_bg_1790376859184.jpg" alt="Clases de Automaquillaje">
+          <span class="card-tag">Personalizado</span>
+        </div>
+        <div class="card-body">
+          <h3>Automaquillaje Masterclass</h3>
+          <p>Aprende técnicas profesionales adaptadas a la forma de tu rostro y tono de piel.</p>
+          <div class="card-footer">
+            <span class="duracion">⏱️ 2 hrs</span>
+            <button class="btn-reservar-servicio" data-servicio-name="Clases de Automaquillaje">Reservar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="servicio-card" data-servicio="Maquillaje Artístico" data-trabajos="artistico">
+        <div class="card-img">
+          <img src="images/makeup_artistic_1790376885514.jpg" alt="Maquillaje Artístico">
+          <span class="card-tag">Creativo</span>
+        </div>
+        <div class="card-body">
+          <h3>Maquillaje Artístico</h3>
+          <p>Creaciones conceptuales y estilizadas para producciones, teatro y eventos temáticos.</p>
+          <div class="card-footer">
+            <span class="duracion">⏱️ 120+ min</span>
+            <button class="btn-reservar-servicio" data-servicio-name="Maquillaje Artístico">Reservar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería interactiva con Hover Effect -->
+  <section id="galeria">
+    <div class="section-header">
+      <span class="sub-title">Portafolio</span>
+      <h2>Nuestros Trabajos Destacados</h2>
+    </div>
+
+    <div class="galeria-grid">
+      <div class="galeria-item" data-trabajos="novia" role="button" tabindex="0" aria-label="Ver trabajos: Look Nupcial">
+        <img src="images/trabajos/novia-1.jpg" alt="Look Nupcial" loading="lazy">
+        <div class="galeria-overlay">
+          <span>Look Nupcial</span>
+          <small class="galeria-ver">Ver trabajos →</small>
+        </div>
+      </div>
+      <div class="galeria-item" data-trabajos="social" role="button" tabindex="0" aria-label="Ver trabajos: Maquillaje Social">
+        <img src="images/makeup_social_1790376866896.jpg" alt="Maquillaje Social" loading="lazy">
+        <div class="galeria-overlay">
+          <span>Maquillaje Social</span>
+          <small class="galeria-ver">Ver trabajos →</small>
+        </div>
+      </div>
+      <div class="galeria-item" data-trabajos="artistico" role="button" tabindex="0" aria-label="Ver trabajos: Edición Artística">
+        <img src="images/makeup_artistic_1790376885514.jpg" alt="Edición Artística" loading="lazy">
+        <div class="galeria-overlay">
+          <span>Edición Artística</span>
+          <small class="galeria-ver">Ver trabajos →</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section id="testimonios" class="testimonios-section">
+    <div class="section-header">
+      <span class="sub-title">Testimonios</span>
+      <h2>Lo que dicen nuestras clientas</h2>
+      <p>Experiencias reales de novias, quinceañeras y clientas de eventos.</p>
+    </div>
+
+    <div class="testimonios-grid">
+      <article class="testimonio-card scroll-animate">
+        <div class="testimonio-estrellas" aria-label="5 de 5 estrellas">★★★★★</div>
+        <!-- REEMPLAZAR: mensaje real de una clienta (con su permiso) -->
+        <blockquote class="testimonio-texto ejemplo">
+          “Aquí va el mensaje real de una clienta sobre su experiencia con Jou. Puede ser de WhatsApp, Instagram o una reseña de Google.”
+        </blockquote>
+        <div class="testimonio-autora">
+          <!-- REEMPLAZAR: foto de la clienta o de su look (opcional). Si no hay foto, se muestra la inicial. -->
+          <span class="testimonio-inicial" aria-hidden="true">N</span>
+          <div>
+            <strong>Nombre de la clienta</strong>
+            <span>Maquillaje de Novia</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonio-card scroll-animate">
+        <div class="testimonio-estrellas" aria-label="5 de 5 estrellas">★★★★★</div>
+        <!-- REEMPLAZAR: mensaje real de una clienta (con su permiso) -->
+        <blockquote class="testimonio-texto ejemplo">
+          “Aquí va el mensaje real de una clienta sobre su experiencia con Jou. Puede ser de WhatsApp, Instagram o una reseña de Google.”
+        </blockquote>
+        <div class="testimonio-autora">
+          <!-- REEMPLAZAR: foto de la clienta o de su look (opcional). Si no hay foto, se muestra la inicial. -->
+          <span class="testimonio-inicial" aria-hidden="true">S</span>
+          <div>
+            <strong>Nombre de la clienta</strong>
+            <span>Maquillaje Social</span>
+          </div>
+        </div>
+      </article>
+      <article class="testimonio-card scroll-animate">
+        <div class="testimonio-estrellas" aria-label="5 de 5 estrellas">★★★★★</div>
+        <!-- REEMPLAZAR: mensaje real de una clienta (con su permiso) -->
+        <blockquote class="testimonio-texto ejemplo">
+          “Aquí va el mensaje real de una clienta sobre su experiencia con Jou. Puede ser de WhatsApp, Instagram o una reseña de Google.”
+        </blockquote>
+        <div class="testimonio-autora">
+          <!-- REEMPLAZAR: foto de la clienta o de su look (opcional). Si no hay foto, se muestra la inicial. -->
+          <span class="testimonio-inicial" aria-hidden="true">M</span>
+          <div>
+            <strong>Nombre de la clienta</strong>
+            <span>Automaquillaje Masterclass</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Reservaciones e Interactividad -->
+  <section id="reservaciones">
+    <div class="reservaciones-container">
+      <div class="reservacion-info">
+        <span class="sub-title">Agenda Fácil</span>
+        <h2>Haz tu Reservación</h2>
+        <p>Cuéntanos qué necesitas y te llevaremos a WhatsApp con tu solicitud lista. Te confirmamos la disponibilidad lo antes posible.</p>
+        
+        <div class="info-list">
+          <div class="info-item">
+            <span class="icon">📍</span>
+            <div>
+              <strong>Ubicación:</strong>
+              <p>San Pedro Sula y El Progreso, Yoro</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">💬</span>
+            <div>
+              <strong>Atención directa:</strong>
+              <p>+504 8780-0676</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="icon">✨</span>
+            <div>
+              <strong>Reserva previa:</strong>
+              <p>Sujeto a disponibilidad de agenda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reservacion-form-box">
+        <form id="form-reservacion" novalidate>
+          <!-- Campo trampa anti-spam: invisible para personas, no borrar -->
+          <div class="campo-trampa" aria-hidden="true">
+            <label for="website">No llenar este campo</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <fieldset class="form-seccion">
+            <legend><span class="paso">1</span> Tus datos</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana García" autocomplete="name" required>
+                <small class="error-msg">Escribe tu nombre y apellido</small>
+              </div>
+
+              <div class="form-group">
+                <label for="telefono">WhatsApp</label>
+                <div class="input-prefijo">
+                  <span aria-hidden="true">+504</span>
+                  <input type="tel" id="telefono" name="telefono" placeholder="9999-9999" inputmode="numeric" autocomplete="tel-national" maxlength="9" required>
+                </div>
+                <small class="error-msg">Escribe un número de 8 dígitos</small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-seccion">
+            <legend><span class="paso">2</span> Tu servicio</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="servicio">Servicio</label>
+                <div class="select-wrapper">
+                  <select id="servicio" name="servicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Maquillaje Social">Maquillaje Social</option>
+                    <option value="Maquillaje de Novia">Maquillaje de Novia</option>
+                    <option value="Clases de Automaquillaje">Clases de Automaquillaje</option>
+                    <option value="Maquillaje Artístico">Maquillaje Artístico</option>
+                  </select>
+                </div>
+                <small class="error-msg">Selecciona un servicio</small>
+              </div>
+
+              <div class="form-group">
+                <label for="numero-servicios">Cantidad de Personas</label>
+                <div class="select-wrapper">
+                  <select id="numero-servicios" name="numero-servicios" required>
+                    <option value="">Selecciona la cantidad</option>
+                  </select>
+                </div>
+                <small class="error-msg">Selecciona la cantidad</small>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fecha">Fecha del Evento</label>
+                <input type="date" id="fecha" name="fecha" required>
+                <small class="error-msg">Selecciona una fecha a partir de hoy</small>
+              </div>
+
+              <div class="form-group">
+                <label for="hora">Hora Preferida</label>
+                <div class="select-wrapper">
+                  <select id="hora" name="hora" required>
+                    <option value="">Selecciona un horario</option>
+                    <option value="Madrugada (4 – 7 am)">Madrugada (4 – 7 am)</option>
+                    <option value="Mañana (7 – 11 am)">Mañana (7 – 11 am)</option>
+                    <option value="Mediodía (11 am – 2 pm)">Mediodía (11 am – 2 pm)</option>
+                    <option value="Tarde (2 – 6 pm)">Tarde (2 – 6 pm)</option>
+                    <option value="Noche (6 – 9 pm)">Noche (6 – 9 pm)</option>
+                  </select>
+                </div>
+                <small class="error-msg">Selecciona un horario</small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-seccion">
+            <legend><span class="paso">3</span> ¿Dónde?</legend>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="ciudad">Ciudad</label>
+                <div class="select-wrapper">
+                  <select id="ciudad" name="ciudad" required>
+                    <option value="">Selecciona la ciudad</option>
+                    <option value="San Pedro Sula">San Pedro Sula</option>
+                    <option value="El Progreso">El Progreso</option>
+                    <option value="Otra ciudad">Otra ciudad</option>
+                  </select>
+                </div>
+                <small class="error-msg">Selecciona la ciudad</small>
+              </div>
+
+              <div class="form-group">
+                <span class="label" id="label-lugar">Lugar del Servicio</span>
+                <div class="opciones-lugar" role="radiogroup" aria-labelledby="label-lugar">
+                  <label class="opcion">
+                    <input type="radio" name="lugar" value="En el estudio" checked>
+                    <span>En el estudio</span>
+                  </label>
+                  <label class="opcion">
+                    <input type="radio" name="lugar" value="A domicilio">
+                    <span>A domicilio</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comentarios">Detalles del Evento <em class="opcional">(opcional)</em></label>
+              <textarea id="comentarios" name="comentarios" rows="3" maxlength="300" placeholder="Ej. Boda a las 3 pm, me gusta un look natural, tengo foto de referencia…"></textarea>
+              <small class="contador" id="contador-comentarios">0 / 300</small>
+            </div>
+          </fieldset>
+
+          <!-- Cuadro de Vista Previa Interactiva -->
+          <div class="preview-box" id="preview-box">
+            <h4>Resumen de tu Solicitud</h4>
+            <div class="preview-details">
+              <p><span>Servicio:</span> <strong id="prev-servicio">Por seleccionar</strong></p>
+              <p><span>Personas:</span> <strong id="prev-cantidad">-</strong></p>
+              <p><span>Fecha:</span> <strong id="prev-fecha">Por seleccionar</strong></p>
+              <p><span>Hora:</span> <strong id="prev-hora">Por seleccionar</strong></p>
+              <p><span>Lugar:</span> <strong id="prev-lugar">En el estudio</strong></p>
+            </div>
+          </div>
+
+          <button type="submit" id="btn-reservar" class="btn-submit">
+            <span>Enviar Reservación por WhatsApp</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <p class="form-nota">Tu reservación queda confirmada cuando te respondamos por WhatsApp.</p>
+        </form>
+
+        <!-- Mensaje después de enviar -->
+        <div class="form-exito" id="form-exito" hidden>
+          <div class="exito-icono" aria-hidden="true">✓</div>
+          <h3>¡Listo, <span id="exito-nombre"></span>!</h3>
+          <p>Abrimos WhatsApp con tu solicitud. Solo presiona <strong>Enviar</strong> en el chat y te confirmaremos la disponibilidad.</p>
+          <a href="#" id="exito-whatsapp" class="boton-whatsapp" target="_blank" rel="noopener noreferrer">¿No se abrió? Abrir WhatsApp</a>
+          <button type="button" id="exito-nueva" class="btn-link">Hacer otra reservación</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas Frecuentes -->
+  <section id="preguntas" class="faq-section">
+    <div class="section-header">
+      <span class="sub-title">Preguntas Frecuentes</span>
+      <h2>Resolvemos tus dudas</h2>
+      <p>Lo que más nos preguntan antes de agendar.</p>
+    </div>
+
+    <div class="faq-lista scroll-animate">
+      <details class="faq-item">
+        <summary>¿Cómo confirmo mi reservación?</summary>
+        <div class="faq-respuesta">
+          <p>Llena el formulario de reservación y presiona “Enviar Reservación por WhatsApp”. Te llegará el mensaje listo para enviar, y tu cita queda confirmada cuando te respondemos por WhatsApp según la disponibilidad de agenda.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Atienden grupos?</summary>
+        <div class="faq-respuesta">
+          <p>Sí. En el formulario puedes reservar de 1 a 15 personas en la misma solicitud. Para grupos más grandes, escríbenos por WhatsApp.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Hacen servicio a domicilio?</summary>
+        <div class="faq-respuesta">
+          <p><mark class="por-confirmar">Por confirmar: si hay servicio a domicilio, en qué ciudades y si tiene costo adicional.</mark></p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿El maquillaje de novia incluye prueba?</summary>
+        <div class="faq-respuesta">
+          <p><mark class="por-confirmar">Por confirmar: si incluye prueba, cuándo se hace y si tiene costo.</mark></p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Con cuánto tiempo de anticipación debo reservar?</summary>
+        <div class="faq-respuesta">
+          <p><mark class="por-confirmar">Por confirmar: tiempo recomendado para novias y para eventos sociales.</mark></p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Se pide anticipo para apartar la fecha?</summary>
+        <div class="faq-respuesta">
+          <p><mark class="por-confirmar">Por confirmar: si se pide anticipo, de cuánto y cómo se paga.</mark></p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa si necesito cancelar o cambiar la fecha?</summary>
+        <div class="faq-respuesta">
+          <p><mark class="por-confirmar">Por confirmar: política de cambios y cancelaciones.</mark></p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Atienden muy temprano para bodas?</summary>
+        <div class="faq-respuesta">
+          <p>En el formulario puedes elegir el horario de madrugada (4 – 7 am). <mark class="por-confirmar">Por confirmar: confirmar este horario.</mark></p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué productos usan?</summary>
+        <div class="faq-respuesta">
+          <p>Cada servicio incluye preparación de piel personalizada y productos de alta gama. <mark class="por-confirmar">Por confirmar: marcas que se usan.</mark></p>
+        </div>
+      </details>
+    </div>
+
+    <p class="faq-mas scroll-animate">¿Tienes otra pregunta? <a href="https://wa.me/50487800676?text=Hola%20Jou%20Flores,%20tengo%20una%20pregunta" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a></p>
+  </section>
+
+  <!-- Contacto / WhatsApp CTA -->
+  <section id="contacto" class="contacto-section">
+    <div class="contacto-content">
+      <h2>¿Tienes alguna duda antes de agendar?</h2>
+      <p>Contáctanos directamente por WhatsApp para consultas sobre paquetes grupales, novias y cotizaciones personalizadas.</p>
+      <a href="https://wa.me/50487800676?text=Hola%20Jou%20Flores,%20tengo%20una%20consulta%20sobre%20tus%20servicios" class="boton-whatsapp" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        <span>Escríbenos por WhatsApp</span>
+        <span class="btn-flecha" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/50487800676?text=Hola%20Jou%20Flores,%20quiero%20más%20información" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+  </a>
+
+  <!-- Instagram Feed Section -->
+  <section id="instagram-feed" class="instagram-section">
+    <div class="instagram-header scroll-animate">
+      <h2>Síguenos en Instagram</h2>
+      <a href="https://www.instagram.com/jouflores_makeupstudio/" target="_blank" rel="noopener noreferrer">@jouflores_makeupstudio</a>
+    </div>
+    <div class="instagram-grid scroll-animate">
+      <a href="https://www.instagram.com/jouflores_makeupstudio/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+        <img src="images/makeup_hero_elegant.jpg" alt="Instagram Post 1">
+        <div class="instagram-overlay">
+          <span>❤️ 245 &nbsp;&nbsp; 💬 12</span>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/jouflores_makeupstudio/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+        <img src="images/makeup_bridal_1790376876556.jpg" alt="Instagram Post 2">
+        <div class="instagram-overlay">
+          <span>❤️ 512 &nbsp;&nbsp; 💬 48</span>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/jouflores_makeupstudio/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+        <img src="images/makeup_social_1790376866896.jpg" alt="Instagram Post 3">
+        <div class="instagram-overlay">
+          <span>❤️ 389 &nbsp;&nbsp; 💬 24</span>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/jouflores_makeupstudio/" target="_blank" rel="noopener noreferrer" class="instagram-item">
+        <img src="images/makeup_artistic_1790376885514.jpg" alt="Instagram Post 4">
+        <div class="instagram-overlay">
+          <span>❤️ 420 &nbsp;&nbsp; 💬 31</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Jou Flores Makeup Studio. San Pedro Sula y El Progreso, Yoro. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Modal Galería -->
+  <div id="gallery-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button type="button" class="close-modal" aria-label="Cerrar galería">&times;</button>
+      <h2 id="modal-title">Galería</h2>
+      <p class="modal-contador" id="modal-contador"></p>
+      <div class="modal-gallery-grid" id="modal-gallery-grid">
+        <!-- Las fotos salen de la lista TRABAJOS en script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Visor de foto ampliada -->
+  <div id="visor" class="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+    <button type="button" class="visor-cerrar" aria-label="Cerrar foto">&times;</button>
+    <button type="button" class="visor-flecha visor-anterior" aria-label="Foto anterior">&#8249;</button>
+    <figure class="visor-figura">
+      <img id="visor-img" src="" alt="">
+      <figcaption id="visor-texto"></figcaption>
+    </figure>
+    <button type="button" class="visor-flecha visor-siguiente" aria-label="Foto siguiente">&#8250;</button>
+  </div>
+
+  <script src="script.js?v=6" charset="UTF-8"></script>
+
+</body>
+</html>
