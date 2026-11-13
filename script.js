@@ -28,7 +28,10 @@ const TRABAJOS = {
   },
   masterclass: {
     titulo: 'Automaquillaje Masterclass',
-    fotos: []
+    fotos: [
+      'images/trabajos/masterclass-1.jpg',
+      'images/trabajos/masterclass-2.jpg'
+    ]
   }
 };
 
